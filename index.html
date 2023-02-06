@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync srt subtitles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="row center">
+            <input type="file" id="srt-input" accept=".srt">
+        </div>
+        <div class="row center">
+            <input type="number" id="delay" placeholder="1000">
+        </div>
+        <div class="row center">
+            <h5>Limite</h5>
+        </div>
+        <div class="row center">
+            <input type="text" id="limite" placeholder="02:12:38,000">
+            <button id="quit-limit">x</button>
+        </div>
+        <div class="row center">
+            <button id="btn-sync" disabled="disabled">Sincronizar</button>
+        </div>
+        
+        
+        <div class="row center">
+            <button id="btn-download" disabled="disabled">Descargar</button>
+        </div>
+
+
+        <a hidden download id="download-link" href=""></a>
+    </div>
+
+    <script id="functions" src="./functions.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
